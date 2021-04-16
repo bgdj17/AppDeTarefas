@@ -35,11 +35,11 @@
 				app:tabIndicatorColor="#FFFFFF"
 				app:tabIndicatorGravity="stretch"
 				app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
-				app:tabIndicatorHeight="54dp"
+				app:tabIndicatorHeight="34dp"
 				app:tabIndicator="@drawable/bordas"
 				app:tabMode="fixed"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
+				android:layout_width="328dp"
+				android:layout_height="40dp"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintEnd_toEndOf="parent"
 				android:background="@drawable/bordas"
@@ -59,15 +59,14 @@
 			app:layout_constraintHorizontal_bias="0.0"
 			app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"/>
 
-	<com.tuann.floatingactionbuttonexpandable.FloatingActionButtonExpandable
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
 			android:id="@+id/fabAdd"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			app:fab_content="Adicionar"
-			app:fab_bg_color="#E91E63"
-			app:fab_duration="100"
+			android:tooltipText="Adicionar"
+			android:background="#E16B6B"
 			android:layout_marginBottom="80dp"
-			app:fab_icon="@drawable/ic_baseline_add_24"
+			app:srcCompat="@drawable/ic_baseline_add_24"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintBottom_toBottomOf="parent"/>
 

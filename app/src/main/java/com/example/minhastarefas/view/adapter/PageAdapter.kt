@@ -1,11 +1,11 @@
 @file:Suppress("DEPRECATION")
 
-package com.example.minhastarefas
+package com.example.minhastarefas.view.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.minhastarefas.view.TaskFragmentProgress
+import com.example.minhastarefas.view.ProgressTasksFragment
 
 class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
@@ -15,10 +15,10 @@ class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            0 -> TaskFragmentProgress()
-            1 -> TaskFragmentProgress()
-            2 -> TaskFragmentProgress()
-            else -> TaskFragmentProgress()
+            0 -> ProgressTasksFragment()
+            1 -> ProgressTasksFragment()
+            2 -> ProgressTasksFragment()
+            else -> ProgressTasksFragment()
         }
     }
 
